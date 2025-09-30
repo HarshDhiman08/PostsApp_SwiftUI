@@ -30,3 +30,14 @@ struct SearchBarView: View {
     }
 }
 
+#Preview {
+    PreviewWrapper()
+}
+
+private struct PreviewWrapper: View {
+    @State private var text = ""
+    var body: some View {
+        SearchBarView(text: $text)
+            .padding()
+    }
+}

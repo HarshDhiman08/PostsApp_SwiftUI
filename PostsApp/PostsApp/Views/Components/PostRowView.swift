@@ -33,3 +33,10 @@ struct PostRowView: View {
         .padding(.vertical, 8)
     }
 }
+
+#Preview {
+    PostRowView(post: Post(id: 1, title: "Here is the tittle of the Posts which will show here.", body: "Preview title", userId: 08))
+        .environmentObject(FavoritesManager())
+        .padding()
+        .previewLayout(.sizeThatFits)
+}

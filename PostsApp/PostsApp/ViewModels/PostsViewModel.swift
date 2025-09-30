@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 @MainActor
 final class PostsViewModel: ObservableObject {
@@ -39,3 +40,4 @@ final class PostsViewModel: ObservableObject {
         }
     }
 }
+

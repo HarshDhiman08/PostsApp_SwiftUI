@@ -44,3 +44,16 @@ struct PostDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
+#Preview {
+    NavigationStack {
+        PostDetailView(
+            post: Post(
+                id: 1,
+                title: "Sample Post Title",
+                body: "This is a sample body for previewing the post detail view. It can span multiple lines to simulate real content.",
+                userId: 1
+            )
+        )
+    }
+    .environmentObject(FavoritesManager())
+}

@@ -49,3 +49,7 @@ struct PostsListView: View {
         }
     }
 }
+#Preview {
+    PostsListView()
+        .environmentObject(FavoritesManager())
+}

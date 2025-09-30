@@ -8,6 +8,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 @MainActor
 final class FavoritesManager: ObservableObject {
@@ -44,3 +45,7 @@ final class FavoritesManager: ObservableObject {
     }
 }
 
+#Preview {
+    ContentView()
+        .environmentObject(FavoritesManager())
+}

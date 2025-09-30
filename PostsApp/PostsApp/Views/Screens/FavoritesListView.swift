@@ -48,3 +48,7 @@ struct FavoritesListView: View {
         vm.posts.filter { favorites.favoriteIDs.contains($0.id) }
     }
 }
+#Preview {
+    FavoritesListView()
+        .environmentObject(FavoritesManager())
+}
